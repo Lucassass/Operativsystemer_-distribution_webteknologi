@@ -1,0 +1,21 @@
+FROM ubuntu
+
+#navigate to correct folder and docker build -t fuckdocker2 .
+# -i to make stuo0ide shit work for ijnteractive
+#to run docker run -it fuckdocker2
+#apt-get update
+#apt-get install mysql-server
+#service mysql start
+#mysql_secure_installation 
+#give password
+#when accesing database  mysql -u root -p  
+#promt pass 
+#CREATE DATABASE db;
+#SHOW DATABASES;
+#USE DB
+#CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20), species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
+#SHOW TABLES;
+#INSERT INTO pet
+#->VALUES('doggie','lucas','cannie', 'm', '2008-11-11', '2009-12-12');
+#SELECT * FROM pet;
+#DELETE FROM pet 

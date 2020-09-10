@@ -1,0 +1,8 @@
+version: '2'
+services: 
+    apache:
+        image: 'cocodolan/php:apache'
+        ports:
+        - "8483:80"
+        environment: 
+            - APACHE_HTTPS_PORT_NUMBER=8483

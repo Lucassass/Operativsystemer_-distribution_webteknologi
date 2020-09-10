@@ -1,5 +1,5 @@
 <?php
-	$servername = "db_container";
+	$servername = "sql";
 	$username = "root";
 	$password = "";
 	$dbname = "abook";

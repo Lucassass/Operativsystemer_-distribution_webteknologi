@@ -1,0 +1,19 @@
+FROM mysql
+
+ENV MYSQL_ALLOW_EMPTY_PASSWORD yes
+
+COPY ./init.sql ./docker-entrypoint-initdb.d/
+
+
+
+#build 
+# run
+# acces mysql 
+
+#use another terminal 
+#docker exec -it a0960a62a25b[secific id check] mysql -u root
+#SHOW DATABASES;
+#use[name of database]
+#SHOW TABLES;
+
+#you can remove all images using docker images prune

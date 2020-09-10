@@ -1,0 +1,8 @@
+FROM php:7.2-apache
+
+COPY ./* /var/www/html/ 
+
+RUN docker-php-ext-install mysqli
+
+# Command to run dockerfile: docker build -t [tagName] . [. er betyder kør dockerfile i home] 
+# http://localhost:8000

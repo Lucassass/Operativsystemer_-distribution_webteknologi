@@ -1,0 +1,26 @@
+# A docker-compose YAML file always starts by defining the version of docker-compose that is used.
+# In this case version 3 is used.
+version: '3'
+
+# Using the key services, we indicate that the following lines will define the services included in the environment.
+services:
+
+# After the services key, the services are defined. Here you include a key, holding the name of your service.
+# In this case, we have named the service ‘sql’ as it is a description of what the service contains.
+   sql: 
+
+# After a service has been made, a number of options is available for use, to specify what the service should be built from and which properties the service should have.
+# Build is used to specify the file-path to where the Dockerfile for the SQL service is located. The path should be relative to the docker-compose.
+      build: ../L2E4/ 
+      command: --default-authentication-plugin=mysql_native_password
+
+   web:
+      build: ../L2E2
+
+
+# Depends_on is telling Docker, that the web-service is dependent on the sql-service which in return starts the services in dependency order.
+      depends_on:
+      - sql
+#Ports work just like -p 8080:50, making the container’s port 80 accessible on the host port 5050.
+      ports:
+      - '5050:80'
