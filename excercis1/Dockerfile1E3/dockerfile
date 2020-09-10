@@ -1,0 +1,5 @@
+FROM ubuntu
+
+COPY /L1E3 /home
+
+CMD bash 

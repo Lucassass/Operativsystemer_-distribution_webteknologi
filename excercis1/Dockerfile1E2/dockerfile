@@ -1,0 +1,5 @@
+FROM ubuntu
+
+RUN command echo "Hello" > helloworld.txt
+
+CMD cat "helloworld.txt"
